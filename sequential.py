@@ -1,15 +1,15 @@
-import threading
 import time
 import random
-import myQueue
+from myQueue import MyQueue
 
 
-process = MyQueue.myQueue()
+process = MyQueue()
 threadsTime = []
 
 
 def moves_in_myQueue(number_thread):
-
+    # Função de movimento da fila
+    
     timeStart = time.time()
 
     old = process.remove()
@@ -19,10 +19,11 @@ def moves_in_myQueue(number_thread):
     print('Execução {0}: tira{1:3d}, poe{2:3d}, fila:{3}'.format(number_thread, old, new, process.get()))
 
     timeEnd = time.time()
-
-    threadsTime.append(timeEnd - timeStart)
+ 
+    threadsTime.append(timeEnd - timeStart) # Adiciona o tempo de execução da função para cada elemento
 
 def sequential():
+    # Função principal de execução sem threads
 
     print("\nFila Inicial: ", process.get(),"\n")
     number_thread = 0
