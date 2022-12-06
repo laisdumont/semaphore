@@ -1,3 +1,5 @@
+Execute ``` efficiency.py ``` para obter os valores de eficiência de cada algoritimo.
+
 # Trabalho Final - Sistemas Operacionais
 
 ## Semáforos
