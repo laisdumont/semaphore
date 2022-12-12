@@ -20,7 +20,7 @@ if __name__=="__main__":
 
     if efficiency > 0:
         sequential_per_concurrent = data_sequential[1]/data_concurrent[1]
-        print("O modelo sequencial é {0:.3f} mais eficiente que o concorrente.\n".format(sequential_per_concurrent))
+        print("O modelo sequencial é {0:.3f} mais rápido que o concorrente.\n".format(sequential_per_concurrent))
     else:
         concurrent_per_sequential = data_concurrent[1]/data_sequential[1]
-        print("O modelo concorrente é {0:.3f} mais eficiente que o sequencial.\n".format(concurrent_per_sequential))
+        print("O modelo concorrente é {0:.3f} mais rápido que o sequencial.\n".format(concurrent_per_sequential))
